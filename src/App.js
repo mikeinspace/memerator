@@ -9,9 +9,9 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    const assetId = window.location.pathname.replace(/^\/|\/$/g, '');
+    const assetId = window.location.pathname;
     let self = this;
-    return axios.get('https://xchain.io/api/asset/' + assetId).then(function(response) {
+    return axios.get('https://xchain.io/api/asset' + assetId).then(function(response) {
       const data = response.data.description.split(';');
       self.setState({ 
         url: data[0].replace('imgur', 'https://i.imgur.com'),
