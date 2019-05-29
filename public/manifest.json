@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Memerator",
+  "name": "Display images and descriptions from couterparty asset ID",
   "icons": [
     {
       "src": "favicon.ico",
