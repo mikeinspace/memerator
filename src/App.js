@@ -26,7 +26,7 @@ class App extends React.Component {
         { this.state.url && 
           <div>
             <div>
-              <img src={ this.state.url } alt="meme"></img>
+              <img src={ this.state.url } alt="meme" height="500"></img>
             </div>
             <p>
               { this.state.desc }
