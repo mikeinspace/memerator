@@ -2,6 +2,46 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+
+
+
+
+
+
+render() {
+    return (
+     
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@viewportapp">
+<meta name="twitter:description" content="View this asset on Viewport.me!">
+<meta name="twitter:title" content="Pepe in Space">
+<meta name="twitter:image" content={this.state.url}>
+
+      
+    );
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -31,6 +71,8 @@ class App extends React.Component {
             <p>
               { this.state.desc }
             </p>
+      
+
           </div>
         }
       </div>
