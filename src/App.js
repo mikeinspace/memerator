@@ -14,7 +14,7 @@ render() {
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@viewportapp">
 <meta name="twitter:description" content="View this asset on Viewport.me!">
-<meta name="twitter:title" content="Pepe in Space">
+<meta name="twitter:title" content={this.state.desc}>
 <meta name="twitter:image" content={this.state.url}>
 
       
