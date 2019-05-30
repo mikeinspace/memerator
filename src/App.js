@@ -3,45 +3,6 @@ import axios from 'axios';
 import './App.css';
 
 
-
-
-
-
-
-render() {
-    return (
-     
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@viewportapp">
-<meta name="twitter:description" content="View this asset on Viewport.me!">
-<meta name="twitter:title" content={this.state.desc}>
-<meta name="twitter:image" content={this.state.url}>
-
-      
-    );
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -64,20 +25,7 @@ class App extends React.Component {
     return (
         
         
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@viewportapp">
-<meta name="twitter:description" content="View this asset on Viewport.me!">
-<meta name="twitter:title" content={this.state.desc}>
-<meta name="twitter:image" content={this.state.url}>
-        
-        
-        
-        
-        
-        
-        
-        
-        
+       
       <div className="App App-header">
         { this.state.url && 
           <div>
