@@ -31,14 +31,10 @@ class App extends React.Component {
       <div className="App App-header">
         { this.state.url && 
           <div>
-            <div>
-              <img src={ this.state.url } alt="meme"></img>
-            </div>
-            <p>Title: { this.state.desc }
-            </p>
+            <div><img src={ this.state.url } alt="meme"></img></div>
+            <p>Title: { this.state.desc } { this.state.supply } </p>
       
-         <p>Supply: { this.state.supply }
-            </p>
+
       
                <p>Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
       
