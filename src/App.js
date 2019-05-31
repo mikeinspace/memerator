@@ -14,7 +14,6 @@ class App extends React.Component {
     let self = this;
     return axios.get('https://xchain.io/api/asset' + assetId).then(function(response) {
       
-      const supp = response.data.supply();
       const data = response.data.description.split(';');
       self.setState({ 
         url: data[0].replace('imgur', 'https://i.imgur.com'),
@@ -35,8 +34,7 @@ class App extends React.Component {
           <div>
             <div><img src={ this.state.url } alt="meme"></img></div>
             <p>{ this.state.desc }</p>
-            <p>Title: { this.state.suppl }</p>
-      
+  
 
       
                <p>Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
