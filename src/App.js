@@ -35,9 +35,9 @@ class App extends React.Component {
             <div><img src={ this.state.url } alt="meme"></img></div>
             <p>{ this.state.desc }</p>
   
-
+            <p>https://xchain.io/asset/{ window.location.pathname }</p>
       
-      <script>document.write('<p>https://xchain.io/asset/' + window.location.pathname + '</p>');</script>
+
       
       
                <p>Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
