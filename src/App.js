@@ -43,7 +43,7 @@ class App extends React.Component {
             <div><img src={ this.state.url } alt="meme"></img></div>
             <p>{ this.state.desc }</p>
   
-            <p class="xchainDetails">Asset Details: <a href="#" onclick="";>https://xchain.io/asset{ window.location.pathname }</a></p>
+            <p class="xchainDetails">Asset Details: <a href="#">https://xchain.io/asset{ window.location.pathname }</a></p>
       
 
             
