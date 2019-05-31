@@ -37,7 +37,8 @@ img {max-height:500px;
     height:auto;
   width:auto;}
 
-.xchainDetails {font-size:16px;border-bottom:1px dotted white;}
+.xchainDetails {font-size:16px;}
+.xchainDetails span {border-bottom:1px dotted white;}
 
 .smallNotice {font-size:12px;}
 
