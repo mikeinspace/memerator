@@ -35,10 +35,10 @@ class App extends React.Component {
             <div><img src={ this.state.url } alt="meme"></img></div>
             <p>{ this.state.desc }</p>
   
- <p style="font-size:10px;">https://xchain.io/asset/A11130160322110527014</p>
+ <p>https://xchain.io/asset/A11130160322110527014</p>
       
       
-               <p style="font-size:10px;">Create your own Cryptogoods at <a style="color:white;" href="http://freeport.io">Freeport.io</a>!</p>
+               <p>Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
       
 
           </div>
