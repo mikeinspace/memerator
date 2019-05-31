@@ -17,7 +17,7 @@ class App extends React.Component {
       const supp = response.data.supply;
       const data = response.data.description.split(';');
       self.setState({ 
-        suppl: supp,
+        suppl: supp(),
         url: data[0].replace('imgur', 'https://i.imgur.com'),
         desc: data[1]
         
@@ -40,7 +40,7 @@ class App extends React.Component {
       
 
       
-               <p style="font-size:10px;">Create your own Cryptogoods at <a href="http://freeport.io" style="color:white;">Freeport.io</a>!</p>
+               <p>Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
       
 
           </div>
