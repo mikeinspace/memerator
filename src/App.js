@@ -33,10 +33,11 @@ class App extends React.Component {
           <div>
             <div><img src={ this.state.url } alt="meme"></img></div>
             <p>Title: { this.state.desc }</p>
+            <p>Title: { response.data.supply }</p>
       
 
       
-               <p>Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
+               <p style="font-size:10px;">Create your own Cryptogoods at <a href="http://freeport.io" style="color:white;">Freeport.io</a>!</p>
       
 
           </div>
