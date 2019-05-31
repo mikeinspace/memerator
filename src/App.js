@@ -18,7 +18,7 @@ class App extends React.Component {
       self.setState({ 
         url: data[0].replace('imgur', 'https://i.imgur.com'),
         desc: data[1],
-        supply: response.data.supply;
+        supply: response.data.supply();
       });
     });
   }
@@ -38,8 +38,7 @@ class App extends React.Component {
               { this.state.desc }
             </p>
       
-         <p>
-              { this.state.supply }
+         <p>Supply: { this.state.supply }
             </p>
       
 
