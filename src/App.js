@@ -24,11 +24,7 @@ class App extends React.Component {
     });
   }
   
-  
-  function openwindow()
-{
-	window.open("https://xchain.io/asset"+window.location.pathname,"mywindow","menubar=1,resizable=1,width=350,height=250");
-}
+
   
   
   
@@ -47,19 +43,10 @@ class App extends React.Component {
             <div><img src={ this.state.url } alt="meme"></img></div>
             <p>{ this.state.desc }</p>
   
-            <p class="xchainDetails">Asset Details: <a href="javascript: openwindow();">https://xchain.io/asset{ window.location.pathname }</a></p>
+            <p class="xchainDetails">Asset Details: <a href="#" onclick="";>https://xchain.io/asset{ window.location.pathname }</a></p>
       
 
-      
-
-      
-      
-      
-      
-      
-      
-      
-      
+            
       
       
                <p class="smallNotice">Create your own Cryptogoods at <a href="http://freeport.io" target="_blank">Freeport.io</a>!</p>
