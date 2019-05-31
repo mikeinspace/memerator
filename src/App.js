@@ -40,7 +40,7 @@ class App extends React.Component {
          <p>Supply: { this.state.supply }
             </p>
       
-               <p>Filler</p>
+               <p>Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
       
 
           </div>
