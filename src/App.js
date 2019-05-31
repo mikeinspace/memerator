@@ -35,12 +35,12 @@ class App extends React.Component {
             <div><img src={ this.state.url } alt="meme"></img></div>
             <p>{ this.state.desc }</p>
   
-            <p>https://xchain.io/asset/{ window.location.pathname }</p>
+            <p class="xchainDetails">Asset Details: <a href="https://xchain.io/asset{ window.location.pathname }">https://xchain.io/asset{ window.location.pathname }</a></p>
       
 
       
       
-               <p>Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
+               <p class="smallNotice">Create your own Cryptogoods at <a href="http://freeport.io">Freeport.io</a>!</p>
       
 
           </div>
