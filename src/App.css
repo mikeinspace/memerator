@@ -36,3 +36,9 @@ img {max-height:500px;
     max-width:500px;
     height:auto;
   width:auto;}
+
+.xchainDetails {font-size:12px;}
+
+.smallNotice {font-size:10px;}
+
+.smallNotice a {color:white;}
