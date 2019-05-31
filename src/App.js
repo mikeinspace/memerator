@@ -34,8 +34,7 @@ class App extends React.Component {
             <div>
               <img src={ this.state.url } alt="meme"></img>
             </div>
-            <p>
-              { this.state.desc }
+            <p>Title: { this.state.desc }
             </p>
       
          <p>Supply: { this.state.supply }
