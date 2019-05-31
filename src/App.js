@@ -14,10 +14,9 @@ class App extends React.Component {
     let self = this;
     return axios.get('https://xchain.io/api/asset' + assetId).then(function(response) {
       
-      const supp = response.data.supply;
+      const supp = response.data.supply();
       const data = response.data.description.split(';');
       self.setState({ 
-        suppl: supp(),
         url: data[0].replace('imgur', 'https://i.imgur.com'),
         desc: data[1]
         
