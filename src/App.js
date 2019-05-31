@@ -17,8 +17,8 @@ class App extends React.Component {
       const data = response.data.description.split(';');
       self.setState({ 
         url: data[0].replace('imgur', 'https://i.imgur.com'),
-        desc: data[1],
-        supply: response.data.supply();
+        desc: data[1]
+
       });
     });
   }
@@ -32,7 +32,7 @@ class App extends React.Component {
         { this.state.url && 
           <div>
             <div><img src={ this.state.url } alt="meme"></img></div>
-            <p>Title: { this.state.desc } { this.state.supply } </p>
+            <p>Title: { this.state.desc } { response.data.supply } </p>
       
 
       
