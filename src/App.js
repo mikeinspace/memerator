@@ -40,6 +40,8 @@ class App extends React.Component {
          <p>Supply: { this.state.supply }
             </p>
       
+               <p>Filler</p>
+      
 
           </div>
         }
