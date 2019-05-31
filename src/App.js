@@ -13,10 +13,12 @@ class App extends React.Component {
     const assetId = window.location.pathname;
     let self = this;
     return axios.get('https://xchain.io/api/asset' + assetId).then(function(response) {
+              
       const data = response.data.description.split(';');
       self.setState({ 
         url: data[0].replace('imgur', 'https://i.imgur.com'),
-        desc: data[1] 
+        desc: data[1],
+        supply: response.data.supply;
       });
     });
   }
@@ -34,6 +36,10 @@ class App extends React.Component {
             </div>
             <p>
               { this.state.desc }
+            </p>
+      
+         <p>
+              { this.state.supply }
             </p>
       
 
