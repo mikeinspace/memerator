@@ -32,7 +32,7 @@ class App extends React.Component {
         { this.state.url && 
           <div>
             <div><img src={ this.state.url } alt="meme"></img></div>
-            <p>Title: { this.state.desc } { response.data.supply } </p>
+            <p>Title: { this.state.desc }</p>
       
 
       
