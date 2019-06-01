@@ -12,7 +12,7 @@ class App extends React.Component {
   
 
 function xchainPop() {
-  alert("hello")
+  alert(window.location.pathname)
 }
 
   
