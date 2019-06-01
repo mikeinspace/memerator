@@ -42,6 +42,9 @@ img {max-height:500px;
 #SearchField {color:white;font-size:14px;}
 
 #SearchField a {text-decoration:none;display: block;float:right;background-color:white;color:black;padding:6px;}
+
+#SearchField input {display:block;float:right;padding:6px;}
+
 .xchainDetails a {border-bottom:1px dotted white;text-decoration:none;color:white;}
 
 .smallNotice {font-size:12px;}
