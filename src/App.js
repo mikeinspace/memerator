@@ -50,7 +50,8 @@ class App extends React.Component {
       <h1>VIEWPORT.ME</h1>
       
       
-      
+<input type="text" id="text" />
+<input type="button" id="btn" value="Submit" onClick="javascript: window.open('http://www.mywebsite.com/print/' + document.getElementById('text').value);" />
       
       
       
