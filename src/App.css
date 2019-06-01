@@ -43,7 +43,7 @@ img {max-height:500px;
 
 #SearchField a {text-decoration:none;background-color:white;color:black;padding:6px;}
 
-#SearchField input {padding:5px;}
+#SearchField input {padding:5px;box-sizing: border-box;border:1px solid black;}
 
 .xchainDetails a {border-bottom:1px dotted white;text-decoration:none;color:white;}
 
