@@ -38,6 +38,10 @@ img {max-height:500px;
   width:auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .xchainDetails {font-size:16px;}
+
+#SearchField {color:white;font-size:14px;}
+
+#SearchField a {text-decoration:none;display block;float:left;background-color:white;color:black;padding:6px;}
 .xchainDetails a {border-bottom:1px dotted white;text-decoration:none;color:white;}
 
 .smallNotice {font-size:12px;}
