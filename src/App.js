@@ -50,8 +50,7 @@ class App extends React.Component {
       <h1>VIEWPORT.ME</h1>
       
       
-<input type="text" id="text" />
-<a href="javascript:window.location.href=document.getElementById('text').value;">submit</a>
+<input type="text" id="text" value="A11129698925369532399" /> <a href="javascript:window.location.href=document.getElementById('text').value;">submit</a>
       
       
       
