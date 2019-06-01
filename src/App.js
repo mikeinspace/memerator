@@ -9,6 +9,17 @@ class App extends React.Component {
     this.state = { url: null, desc: null }
   }
   
+  
+
+function xchainPop() {
+  alert("hello")
+}
+
+  
+  
+  
+  
+  
   componentDidMount() {
     const assetId = window.location.pathname;
     let self = this;
@@ -36,11 +47,7 @@ class App extends React.Component {
     return (
         
         
-<script>
-function xchainPop() {
-  alert("hello")
-}
-</script>
+
       
       
       
