@@ -51,7 +51,9 @@ class App extends React.Component {
       
       
 <input type="text" id="text" />
-<input type="button" id="btn" value="Submit" onClick="javascript: window.open('http://www.mywebsite.com/print/' + document.getElementById('text').value);" />
+<a href="javascript:window.location.href=document.getElementById('text').value;">submit</a>
+      
+      
       
       
       
