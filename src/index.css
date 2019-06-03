@@ -22,7 +22,7 @@ body {
 .FeaturedAssetsList a {color:white;text-decoration:none;}
 .FeaturedAssetsList a:hover {text-decoration:underline;}
 .FeaturedAssets b {font-size:33px;font-weight:300;}
-.FeaturedAssets {margin-top:24px !important; margin-bottom:12px !important;}
+.FeaturedAssets {margin-top:12px !important; margin-bottom:12px !important;}
 
 .pb-5 {padding-bottom: 0.5rem !important;}
 
