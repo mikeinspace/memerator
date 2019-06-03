@@ -81,8 +81,7 @@ class App extends React.Component {
           { error(this.state) }
           { assetData(this.state) }
       <p class="FeaturedAssets">
-        <b>Featured Assets</b><br/><br/>
-        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
+        <p><b>Featured Assets</b></p><p><a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
         <a href="/A11160656854035320052">Rioting Jeb</a><br/>
         <a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br/>
         <a href="/A11151095948077247591">YANGSTOMP</a><br/>
