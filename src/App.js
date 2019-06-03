@@ -80,14 +80,7 @@ class App extends React.Component {
           { assetForm() }
           { error(this.state) }
           { assetData(this.state) }
-      <p class="FeaturedAssets">
-        <p><b>Featured Assets</b></p><p><a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
-        <a href="/A11160656854035320052">Rioting Jeb</a><br/>
-        <a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br/>
-        <a href="/A11151095948077247591">YANGSTOMP</a><br/>
-        <a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br/>
-        <a href="/A11119422956623151903">DJPEPE Interview</a><br/>
-        <a href="/A11117815878726952419">NOXCP</a><br/></p>
+      <p class="FeaturedAssets"><b>Featured Assets</b></p><p><a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/><a href="/A11160656854035320052">Rioting Jeb</a><br/><a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br/><a href="/A11151095948077247591">YANGSTOMP</a><br/><a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br/><a href="/A11119422956623151903">DJPEPE Interview</a><br/><a href="/A11117815878726952419">NOXCP</a><br/></p>
         </main>
 
 
