@@ -77,7 +77,12 @@ class App extends React.Component {
                 <h1 className="display-4 font-italic">{this.state.desc}</h1>
               </div>
             </div>
-            <p class="xchainDetails">Asset Details: <a href={this.state.xChainUrl}>{this.state.xChainUrl}</a></p>
+
+            <div className="row pb-3">
+              <div className="col">
+                Asset Details: <a className="text-light" href={this.state.xChainUrl}>{this.state.xChainUrl}</a>
+              </div>
+            </div>
             <p class="smallNotice">Create your own Cryptogoods at <a href="http://freeport.io" target="_blank">Freeport.io</a>!</p>
           </div>
         }
