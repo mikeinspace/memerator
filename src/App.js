@@ -114,11 +114,17 @@ function assetForm() {
   return (
     <div className="row pb-4">
       <div className="col">
-        <form className="form-inline justify-content-center" onSubmit={loadNewAsset}>
-          <div className="mx-3">
-            <input type="text" className="form-control" placeholder="Freeport Asset ID" onChange={captureNewAssetID} />
+        <form onSubmit={loadNewAsset}>
+          <div className="form-row">
+            <div className="col-2 col-sm-3 col-lg-4" />
+            <div className="col-7 col-sm-5 col-lg-3">
+              <input type="text" className="form-control" placeholder="Freeport Asset ID" onChange={captureNewAssetID} />
+            </div>
+            <div className="col-1">
+              <button type="submit" className="btn btn-block btn-light">GO</button>
+            </div>
+            <div className="col-2 col-sm-3 col-lg-4" />
           </div>
-          <button type="submit" className="btn btn-light">GO</button>
         </form>
       </div>
     </div>
