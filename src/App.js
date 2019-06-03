@@ -42,7 +42,7 @@ class App extends React.Component {
 
       // make sure there are two pieces of data that were split with `;`,
       // also make sure the first piece of data includes the string 'imgur'.
-      if (data.length != 2 || !data[0].includes('imgur')) {
+      if (data.length !== 2 || !data[0].includes('imgur')) {
         
         // if not, it's an error
         self.setState({ err: true });
