@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const imgurUrl = 'https://i.imgur.com';
 const xChainAssetBase = 'https://xchain.io/asset/';
