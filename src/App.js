@@ -92,7 +92,7 @@ function title() {
   return (
     <div className="row pb-5 pt-4">
       <div className="col">
-        <h1 className="display-2">Viewport.me</h1>
+        <h1 className="display-2"><a className="text-light" href="/">Viewport.me</a></h1>
       </div>
     </div>
   );
