@@ -106,8 +106,9 @@ function assetForm() {
   }
 
   function loadNewAsset(event) {
-    window.location.assign(newAssetID);
     event.preventDefault();
+    if (!newAssetID) return;
+    window.location.assign(newAssetID);
   }
 
   return (
