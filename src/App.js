@@ -20,17 +20,22 @@ class App extends React.Component {
 
   componentDidMount() {
     const assetId = window.location.pathname.substring(1);
+    if (!assetId) return;
     this.setState({ assetId });
     let self = this;
     return axios.get(xChainApiAssetBase + assetId).then(function (response) {
       const data = response.data.description.split(';');
+      if (data.length != 2 || !data[0].includes('imgur')) {
+        self.setState({ err: true });
+        return;
+      }
       self.setState({
         imgUrl: data[0].replace('imgur', imgurUrl),
         xChainUrl: xChainAssetBase + assetId,
         desc: data[1]
       });
     }).catch(function () {
-      self.setState({ err: true })
+      self.setState({ err: true });
     });
   }
 
