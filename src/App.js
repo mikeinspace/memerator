@@ -2,6 +2,10 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+const imgurUrl = 'https://i.imgur.com';
+const xChainAssetBase = 'https://xchain.io/asset/';
+const xChainApiAssetBase = 'https://xchain.io/api/asset/';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -13,13 +17,13 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const assetId = window.location.pathname;
+    const assetId = window.location.pathname.substring(1);
     let self = this;
-    return axios.get('https://xchain.io/api/asset' + assetId).then(function (response) {
+    return axios.get(xChainApiAssetBase + assetId).then(function (response) {
       const data = response.data.description.split(';');
       self.setState({
-        imgUrl: data[0].replace('imgur', 'https://i.imgur.com'),
-        xChainUrl: 'https://xchain.io/asset' + assetId,
+        imgUrl: data[0].replace('imgur', imgurUrl),
+        xChainUrl: xChainAssetBase + assetId,
         desc: data[1]
       });
     });
