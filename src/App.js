@@ -80,11 +80,10 @@ class App extends React.Component {
           { assetForm() }
           { error(this.state) }
           { assetData(this.state) }
-
-
+      <p class="FeaturedAssets"><b>Featured Assets</b><br/>hello<br/>hello<br/>hello<br/>hello<br/>hello</p>
         </main>
 
-      <p class="FeaturedAssets"><b>Featured Assets</b><br/>hello<br/>hello<br/>hello<br/>hello<br/>hello</p>
+
 
         <footer>
           { footer() }
