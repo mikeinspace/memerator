@@ -10,7 +10,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      assetId: null,
       imgUrl: null,
       xChainUrl: null,
       desc: null,
@@ -34,7 +33,7 @@ class App extends React.Component {
     return (
       <div className="container-fluid bg-dark text-white text-center">
         { title() }
-        { assetForm(this, this.state.assetId) }
+        { assetForm() }
         { assetData(this.state) }
         { footer() }
       </div>
@@ -52,13 +51,15 @@ function title() {
   );
 }
 
-function assetForm(component, assetId) {
+function assetForm() {
+  let newAssetID = null;
+
   function captureNewAssetID(event) {
-    component.setState({ assetId: event.target.value });
+    newAssetID = event.target.value;
   }
 
   function loadNewAsset(event) {
-    window.location.assign(assetId);
+    window.location.assign(newAssetID);
     event.preventDefault();
   }
 
