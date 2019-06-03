@@ -33,7 +33,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid bg-dark text-white text-center">
-        <h1>Viewport.me</h1>
+        
+        <div className="row pb-5 pt-4">
+          <div className="col">
+            <h1 className="display-2">Viewport.me</h1>
+          </div>
+        </div>
         <div id="SearchField">Freeport Asset ID: <input type="text" id="text" /> <a href="javascript:window.location.href=document.getElementById('text').value;">GO</a></div>
         {this.state.imgUrl &&
           <div>
