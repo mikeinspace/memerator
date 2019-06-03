@@ -10,14 +10,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      assetId: null,
       imgUrl: null,
       xChainUrl: null,
       desc: null,
+      err: false
     }
   }
 
   componentDidMount() {
     const assetId = window.location.pathname.substring(1);
+    this.setState({ assetId });
     let self = this;
     return axios.get(xChainApiAssetBase + assetId).then(function (response) {
       const data = response.data.description.split(';');
@@ -26,6 +29,8 @@ class App extends React.Component {
         xChainUrl: xChainAssetBase + assetId,
         desc: data[1]
       });
+    }).catch(function () {
+      self.setState({ err: true })
     });
   }
 
@@ -34,6 +39,7 @@ class App extends React.Component {
       <div className="container-fluid bg-dark text-white text-center">
         { title() }
         { assetForm() }
+        { error(this.state) }
         { assetData(this.state) }
         { footer() }
       </div>
@@ -77,29 +83,41 @@ function assetForm() {
   );
 }
 
+function error(state) {
+  if (!state.err) return;
+
+  return (
+    <div className="row">
+      <div className="col p-3 mb-2 bg-warning text-dark">
+        Freeport Asset ID <span className="font-weight-bold">{state.assetId}</span> invalid or malformed  
+      </div>
+    </div>
+  );
+}
+
 function assetData(state) {
-  if (state.imgUrl) {
-    return (
-      <div>
-        <div className="row pb-3">
-          <div className="col">
-            <img className="img-fluid shadow" src={state.imgUrl} alt="meme" />
-          </div>
-        </div>
-        <div className="row pb-5">
-          <div className="col">
-            <h1 className="display-4 font-italic">{state.desc}</h1>
-          </div>
-        </div>
-        <div className="row pb-3">
-          <div className="col">
-            <span>Asset Details: </span>
-            <a className="text-light" href={state.xChainUrl}>{state.xChainUrl}</a>
-          </div>
+  if (!state.imgUrl) return;
+  
+  return (
+    <div>
+      <div className="row pb-3">
+        <div className="col">
+          <img className="img-fluid shadow" src={state.imgUrl} alt="meme" />
         </div>
       </div>
-    );
-  }
+      <div className="row pb-5">
+        <div className="col">
+          <h1 className="display-4 font-italic">{state.desc}</h1>
+        </div>
+      </div>
+      <div className="row pb-3">
+        <div className="col">
+          <span>Asset Details: </span>
+          <a className="text-light" href={state.xChainUrl}>{state.xChainUrl}</a>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function footer() {
