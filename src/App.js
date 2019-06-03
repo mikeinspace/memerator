@@ -19,22 +19,54 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    // get the path from URL. should be a counterparty Asset ID
     const assetId = window.location.pathname.substring(1);
+    
+    // if we're at the root URL, then return, there's nothing else to do
     if (!assetId) return;
+
+    // set the `assetId` state property to the assetId in the URL,
+    // we'll be using it if there's an error fetching data
     this.setState({ assetId });
+
+    // grab a reference to `this`, call it `self`, we'll use it for
+    // updating state within the axios response context
     let self = this;
+
+    // call the xchain.io api with freeport assetId
     return axios.get(xChainApiAssetBase + assetId).then(function (response) {
+
+      // if properly formed Freeport assetId, then the description should contain
+      // the imgur reference, then a semicolon, then the title of the asset,
       const data = response.data.description.split(';');
+
+      // make sure there are two pieces of data that were split with `;`,
+      // also make sure the first piece of data includes the string 'imgur'.
       if (data.length != 2 || !data[0].includes('imgur')) {
+        
+        // if not, it's an error
         self.setState({ err: true });
         return;
       }
+      
+      // if we got this far, we've likely got a valid Freeport assetId,
+      // so set some more parts of the state
       self.setState({
+        
+        // replace the 'imgur' refernce with the actual imgur url
         imgUrl: data[0].replace('imgur', imgurUrl),
+
+        // create the counterparty URL
         xChainUrl: xChainAssetBase + assetId,
+
+        // get the Freeport description
         desc: data[1]
       });
+
+    // if there was a problem calling the counterparty API, it'll get caught here
     }).catch(function () {
+      
+      // set the error state
       self.setState({ err: true });
     });
   }
