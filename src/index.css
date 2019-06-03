@@ -19,4 +19,14 @@ body {
   .display-4 {font-size:30px;}
 }
 
+.FeaturedAssets {height: 100%;}
+
+    html, body {
+
+        height: 100%;
+
+        margin: 0px;
+
+    }
+
 
