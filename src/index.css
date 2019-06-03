@@ -26,4 +26,4 @@ body {
 
 .pb-5 {padding-bottom: 0.5rem !important;}
 
-hr {margin-top:2px;margin-bottom:2px;}
+hr {margin-bottom:0px; padding-bottom:0px; color:#CBD3DA;background-color:#CBD3DA;}
