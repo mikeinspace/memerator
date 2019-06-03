@@ -80,7 +80,14 @@ class App extends React.Component {
           { assetForm() }
           { error(this.state) }
           { assetData(this.state) }
-      <p class="FeaturedAssets"><b>Featured Assets</b><br/>hello<br/>hello<br/>hello<br/>hello<br/>hello</p>
+      <p class="FeaturedAssets">
+        <b>Featured Assets</b><br/>
+        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
+        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
+        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
+        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
+        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
+        <a href="/A11130160322110527014">1st Rare Pepe In Space</a></p>
         </main>
 
 
