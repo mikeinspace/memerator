@@ -81,8 +81,12 @@ class App extends React.Component {
           { error(this.state) }
           { assetData(this.state) }
 
-      <p>hello<br>hello<br>hello<br>hello<br>hello<br>hello</p>
+
         </main>
+
+      <p>hello<br>hello<br>hello<br>hello<br>hello<br>hello</p>
+
+      <p style="vertical-align: text-top;">2hello<br>hello<br>hello<br>hello<br>hello<br>hello</p>
 
 
         <footer>
