@@ -74,6 +74,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid d-flex flex-column bg-dark text-white text-center">
+      <p>hello</p>
         <main className="flex-fill">
           { title() }
           { assetForm() }
@@ -125,7 +126,7 @@ function assetForm() {
             </div>
             <div className="col-2 col-md-3 col-lg-4" />
           </div>
-        </form><p>hello</p>
+        </form>
       </div>
     </div>
   );
@@ -150,7 +151,7 @@ function assetData(state) {
     <div>
       <div className="row pb-3">
         <div className="col">
-          <img className="img-fluid shadow" src={state.imgUrl} alt="meme" />
+          <img className="img-fluid shadow" src={state.imgUrl} alt={state.desc} title={state.desc} />
         </div>
       </div>
       <div className="row pb-5">
