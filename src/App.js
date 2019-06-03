@@ -15,6 +15,9 @@ class App extends React.Component {
       xChainUrl: null,
       desc: null,
     }
+
+    this.captureNewAssetID = this.captureNewAssetID.bind(this);
+    this.loadNewAsset = this.loadNewAsset.bind(this);
   }
 
   componentDidMount() {
@@ -28,6 +31,15 @@ class App extends React.Component {
         desc: data[1]
       });
     });
+  }
+
+  captureNewAssetID(event) {
+    this.setState({ assetId: event.target.value });
+  }
+
+  loadNewAsset(event) {
+    window.location.assign(this.state.assetId);
+    event.preventDefault();
   }
 
   render() {
