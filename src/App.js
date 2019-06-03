@@ -84,7 +84,7 @@ class App extends React.Component {
 
         </main>
 
-      <p><b>Featured Assets</b><br/>hello<br/>hello<br/>hello<br/>hello<br/>hello</p>
+      <p class="FeaturedAssets"><b>Featured Assets</b><br/>hello<br/>hello<br/>hello<br/>hello<br/>hello</p>
 
         <footer>
           { footer() }
