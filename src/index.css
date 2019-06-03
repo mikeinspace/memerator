@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 
-.display-2 .text-light :hover {text-decoration:none;}
+.display-2 a.text-light:hover {text-decoration:none;}
 
 
 @media screen and (max-width: 1500px) {
