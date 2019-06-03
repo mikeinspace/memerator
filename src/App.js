@@ -32,7 +32,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App App-header">
+      <div className="container-fluid bg-dark text-white text-center">
         <h1>Viewport.me</h1>
         <div id="SearchField">Freeport Asset ID: <input type="text" id="text" /> <a href="javascript:window.location.href=document.getElementById('text').value;">GO</a></div>
         {this.state.imgUrl &&
