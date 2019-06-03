@@ -93,7 +93,8 @@ function assetData(state) {
         </div>
         <div className="row pb-3">
           <div className="col">
-            Asset Details: <a className="text-light" href={state.xChainUrl}>{state.xChainUrl}</a>
+            <span>Asset Details: </span>
+            <a className="text-light" href={state.xChainUrl}>{state.xChainUrl}</a>
           </div>
         </div>
       </div>
@@ -105,7 +106,9 @@ function footer() {
   return (
     <div className="row pb-3">
       <div className="col small">
-        Create your own Cryptogoods at <a className="text-light" href="https://freeport.io" target="_blank" rel="noopener noreferrer">Freeport.io</a>!
+        <span>Create your own Cryptogoods at </span>
+        <a className="text-light" href="https://freeport.io" target="_blank" rel="noopener noreferrer">Freeport.io</a>
+        <span>!</span>
       </div>
     </div>
   );
