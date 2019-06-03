@@ -36,12 +36,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container-fluid bg-dark text-white text-center">
-        { title() }
-        { assetForm() }
-        { error(this.state) }
-        { assetData(this.state) }
-        { footer() }
+      <div className="container-fluid d-flex flex-column bg-dark text-white text-center">
+        <main className="flex-fill">
+          { title() }
+          { assetForm() }
+          { error(this.state) }
+          { assetData(this.state) }
+        </main>
+        <footer>
+          { footer() }
+        </footer>
       </div>
     );
   }
