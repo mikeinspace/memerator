@@ -51,7 +51,18 @@ class App extends React.Component {
             <h1 className="display-2">Viewport.me</h1>
           </div>
         </div>
-        <div id="SearchField">Freeport Asset ID: <input type="text" id="text" /> <a href="javascript:window.location.href=document.getElementById('text').value;">GO</a></div>
+
+        <div className="row pb-4">
+          <div className="col">
+            <form className="form-inline justify-content-center" onSubmit={this.loadNewAsset}>
+              <div className="mx-3">
+                <input type="text" className="form-control" placeholder="Freeport Asset ID" onChange={this.captureNewAssetID} />
+              </div>
+              <button type="submit" className="btn btn-light">GO</button>
+            </form>
+          </div>
+        </div>
+        
         {this.state.imgUrl &&
           <div>
             <img src={this.state.imgUrl} alt="meme" />
