@@ -126,8 +126,8 @@ function assetForm() {
             <div className="col-2 col-md-3 col-lg-4" />
           </div>
         </form>
-      </div>hello
-    </div>what
+      </div>
+    </div>
   );
 }
 
