@@ -166,7 +166,7 @@ function assetData(state) {
       <div className="row pb-3">
         <div className="col">
           <span>Asset Details: </span>
-          <a className="text-light" href={state.xChainUrl}>{state.xChainUrl}</a>
+          <a className="text-light" href={state.xChainUrl}>{state.xChainUrl}</a><hr>
         </div>
       </div>
     </div>
