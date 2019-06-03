@@ -21,3 +21,4 @@ body {
 
 .FeaturedAssets a {color:white;text-decoration:none;}
 .FeaturedAssets a:hover {text-decoration:underline;}
+.FeaturedAssets b {font-size:18px;}
