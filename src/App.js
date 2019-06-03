@@ -84,10 +84,7 @@ class App extends React.Component {
 
         </main>
 
-      <p>hello<br>hello<br>hello<br>hello<br>hello<br>hello</p>
-
-      <p style="vertical-align: text-top;">2hello<br>hello<br>hello<br>hello<br>hello<br>hello</p>
-
+      <p>hello<br/>hello<br/>hello<br/>hello<br/>hello<br/>hello</p>
 
         <footer>
           { footer() }
