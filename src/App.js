@@ -71,7 +71,12 @@ class App extends React.Component {
                 <img className="img-fluid shadow" src={this.state.imgUrl} alt="meme" />
               </div>
             </div>
-            <p>{this.state.desc}</p>
+
+            <div className="row pb-5">
+              <div className="col">
+                <h1 className="display-4 font-italic">{this.state.desc}</h1>
+              </div>
+            </div>
             <p class="xchainDetails">Asset Details: <a href={this.state.xChainUrl}>{this.state.xChainUrl}</a></p>
             <p class="smallNotice">Create your own Cryptogoods at <a href="http://freeport.io" target="_blank">Freeport.io</a>!</p>
           </div>
