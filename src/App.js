@@ -74,13 +74,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid d-flex flex-column bg-dark text-white text-center">
-      <p>hello</p>
+
         <main className="flex-fill">
           { title() }
           { assetForm() }
           { error(this.state) }
           { assetData(this.state) }
         </main>
+
+      <p>hello</p>
         <footer>
           { footer() }
         </footer>
@@ -173,7 +175,7 @@ function footer() {
   return (
     <div className="row pb-3">
       <div className="col small">
-        <span>Create your own Cryptogoods at </span>
+        <span>Create your own Cryptogoods with </span>
         <a className="text-light" href="https://freeport.io" target="_blank" rel="noopener noreferrer">Freeport.io</a>
         <span>!</span>
       </div>
