@@ -21,6 +21,6 @@ body {
 
 .FeaturedAssetsList a {color:white;text-decoration:none;}
 .FeaturedAssetsList a:hover {text-decoration:underline;}
-.FeaturedAssets b {font-size:33px;margin-top:24px;font-weight:300;}
+.FeaturedAssets b {font-size:33px;margin-top:24px !important;font-weight:300;margin-bottom:0.5rem !important;}
 
 .pb-5 {padding-bottom: 0.5rem !important;}
