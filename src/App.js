@@ -82,12 +82,13 @@ class App extends React.Component {
           { assetData(this.state) }
       <p class="FeaturedAssets">
         <b>Featured Assets</b><br/>
-        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
-        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
-        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
-        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
-        <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/>
-        <a href="/A11130160322110527014">1st Rare Pepe In Space</a></p>
+        <a href="/A11130160322110527014">1st Rare Pepe In Space (A11130160322110527014)</a><br/>
+        <a href="/A11160656854035320052">Rioting Jeb (A11160656854035320052)</a><br/>
+        <a href="/A11181471940129535550">RARE CSW INTERVIEW (A11181471940129535550)</a><br/>
+        <a href="/A11151095948077247591">YANGSTOMP (A11151095948077247591)</a><br/>
+        <a href="/A11102213780575909853">iMac Miner Pepe fp v1.0 (A11102213780575909853)</a><br/>
+        <a href="/A11119422956623151903">DJPEPE Interview (A11119422956623151903)</a><br/>
+        <a href="/A11117815878726952419">NOXCP (A11117815878726952419)</a><br/></p>
         </main>
 
 
