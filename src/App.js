@@ -80,7 +80,7 @@ class App extends React.Component {
           { assetForm() }
           { error(this.state) }
           { assetData(this.state) }
-      <p class="FeaturedAssets"><b>Featured Assets</b></p><p class="FeaturedAssetsList"><a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/><a href="/A11129336362830770835">GOLDEN HEART</a><br/><a href="/A11160656854035320052">Rioting Jeb</a><br/><a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br/><a href="/A11151095948077247591">YANGSTOMP</a><br/><a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br/><a href="/A11119422956623151903">DJPEPE Interview</a><br/><a href="/A11117815878726952419">NOXCP</a><br/></p>
+      <p class="FeaturedAssets"><b>Featured Assets</b></p><p class="FeaturedAssetsList"><a href="/A11138464185160390958">Hodl-lk-mo-fdl-gw-fp-v1</a><br/><a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/><a href="/A11129336362830770835">GOLDEN HEART</a><br/><a href="/A11160656854035320052">Rioting Jeb</a><br/><a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br/><a href="/A11151095948077247591">YANGSTOMP</a><br/><a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br/><a href="/A11119422956623151903">DJPEPE Interview</a><br/><a href="/A11117815878726952419">NOXCP</a><br/></p>
         </main>
 
 
