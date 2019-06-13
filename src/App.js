@@ -179,7 +179,7 @@ function footer() {
       <div className="col small">
         <span>Create your own Cryptogoods with </span>
         <a className="text-light" href="https://freeport.io" target="_blank" rel="noopener noreferrer">Freeport.io</a>
-        <span>!</span>
+        <span>!<br/>Enjoy this site? Cryptogoods happily accepted here: 1GotRejB6XsGgMsM79TvcypeanDJRJbMtg</span>
       </div>
     </div>
   );
