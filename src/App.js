@@ -179,7 +179,7 @@ function footer() {
       <div className="col small">
         <span>Create your own Cryptogoods with </span>
         <a className="text-light" href="https://freeport.io" target="_blank" rel="noopener noreferrer">Freeport.io</a>
-        <span>!<br/>Enjoy this site? Cryptogoods happily accepted here: 1GotRejB6XsGgMsM79TvcypeanDJRJbMtg<br/><br/>Twitter: <a className="text-light" href="https://www.twitter.com/mikeinspace" target="_blank" rel="noopener noreferrer">@mikeinspace</a></span>
+        <span>!<br/>Enjoy this site? Cryptogoods happily accepted here: 1GotRejB6XsGgMsM79TvcypeanDJRJbMtg<br/><br/>Contact me on Twitter: <a className="text-light" href="https://www.twitter.com/mikeinspace" target="_blank" rel="noopener noreferrer">@mikeinspace</a></span>
       </div>
     </div>
   );
