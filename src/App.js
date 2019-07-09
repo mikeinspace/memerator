@@ -80,7 +80,7 @@ class App extends React.Component {
           { assetForm() }
           { error(this.state) }
           { assetData(this.state) }
-      <p class="FeaturedAssets"><b>Featured Assets</b></p><p class="FeaturedAssetsList"><a href="/A11193054832787328626">Return to null</a><br/><a href="/A11138464185160390958">Hodl-lk-mo-fdl-gw-fp-v1</a><br/><a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/><a href="/A11129336362830770835">GOLDEN HEART</a><br/><a href="/A11160656854035320052">Rioting Jeb</a><br/><a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br/><a href="/A11151095948077247591">YANGSTOMP</a><br/><a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br/><a href="/A11119422956623151903">DJPEPE Interview</a><br/><a href="/A11117815878726952419">NOXCP</a><br/></p>
+      <p class="FeaturedAssets"><b>Featured Assets</b></p><p class="FeaturedAssetsList"><a href="/A11143797262801580196">EMPEROR OF BITCOIN</a><br/><a href="/A11193054832787328626">Return to null</a><br/><a href="/A11138464185160390958">Hodl-lk-mo-fdl-gw-fp-v1</a><br/><a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/><a href="/A11129336362830770835">GOLDEN HEART</a><br/><a href="/A11160656854035320052">Rioting Jeb</a><br/><a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br/><a href="/A11151095948077247591">YANGSTOMP</a><br/><a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br/><a href="/A11119422956623151903">DJPEPE Interview</a><br/><a href="/A11117815878726952419">NOXCP</a><br/></p>
         </main>
 
 
@@ -179,7 +179,7 @@ function footer() {
       <div className="col small">
         <span>Create your own Cryptogoods with </span>
         <a className="text-light" href="https://freeport.io" target="_blank" rel="noopener noreferrer">Freeport.io</a>
-        <span>!<br/>Enjoy this site? Cryptogoods happily accepted here: 1GotRejB6XsGgMsM79TvcypeanDJRJbMtg<br/><br/>Contact me on Twitter: <a className="text-light" href="https://www.twitter.com/mikeinspace" target="_blank" rel="noopener noreferrer">@mikeinspace</a></span>
+        <span>!<br/>Enjoy this site? Cryptogoods happily accepted here: 1GotRejB6XsGgMsM79TvcypeanDJRJbMtg<br/><br/>Contact me on Twitter: <a className="text-light" href="https://www.twitter.com/mikeinspace" target="_blank" rel="noopener noreferrer">@mikeinspace</a><br/><br/>Special thanks to <a className="text-light" href="https://www.twitter.com/trainface" target="_blank" rel="noopener noreferrer">@trainface</a> for the dev work.</span>
       </div>
     </div>
   );
