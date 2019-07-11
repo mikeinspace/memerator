@@ -79,10 +79,10 @@ class App extends React.Component {
           {assetForm()}
           {error(this.state)}
           {assetData(this.state)}
-          <p class="FeaturedAssets">
+          <p className="FeaturedAssets">
             <b>Featured Assets</b>
           </p>
-          <p class="FeaturedAssetsList">
+          <p className="FeaturedAssetsList">
             <a href="/A11143797262801580196">EMPEROR OF BITCOIN</a><br />
             <a href="/A11193054832787328626">Return to null</a><br />
             <a href="/A11138464185160390958">Hodl-lk-mo-fdl-gw-fp-v1</a><br />
