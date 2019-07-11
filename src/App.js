@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Helmet } from "react-helmet";
 import 'bootstrap/dist/css/bootstrap.css';
 
 const imgurUrl = 'https://i.imgur.com';
@@ -74,6 +75,23 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid d-flex flex-column bg-dark text-white text-center">
+        {this.state.imgUrl ? 
+        <Helmet>
+          <meta name="twitter:description" content="View this asset on Viewport.me!" />
+          <meta name="twitter:image" content={this.state.imgUrl} />
+          <meta property="og:image" content={this.state.imgUrl} />
+          <meta property="og:image:secure_url" content={this.state.imgUrl} />
+          <meta property="og:image:alt" content="View this asset on Viewport.me!" />
+        </Helmet> :
+        <Helmet>
+          <meta name="twitter:description" content="Check out Viewport.me!" />
+          <meta name="twitter:image" content="https://i.imgur.com/4TOOqWV.jpg" />
+          <meta property="og:image" content="https://i.imgur.com/4TOOqWV.jpg" />
+          <meta property="og:image:secure_url" content="https://i.imgur.com/4TOOqWV.jpg" />
+          <meta property="og:image:alt" content="Check out Viewport.me!" />
+        </Helmet>
+        }
+        
         <main className="flex-fill">
           {title()}
           {assetForm()}
