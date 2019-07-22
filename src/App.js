@@ -21,7 +21,7 @@ class App extends React.Component {
   componentDidMount() {
     // get the path from URL. should be a counterparty Asset ID
     const assetId = window.location.pathname.substring(1);
-    
+
     // if we're at the root URL, then return, there's nothing else to do
     if (!assetId) return;
 
@@ -43,16 +43,16 @@ class App extends React.Component {
       // make sure there are two pieces of data that were split with `;`,
       // also make sure the first piece of data includes the string 'imgur'.
       if (data.length !== 2 || !data[0].includes('imgur')) {
-        
+
         // if not, it's an error
         self.setState({ err: true });
         return;
       }
-      
+
       // if we got this far, we've likely got a valid Freeport assetId,
       // so set some more parts of the state
       self.setState({
-        
+
         // replace the 'imgur' refernce with the actual imgur url
         imgUrl: data[0].replace('imgur', imgurUrl),
 
@@ -63,9 +63,9 @@ class App extends React.Component {
         desc: data[1]
       });
 
-    // if there was a problem calling the counterparty API, it'll get caught here
+      // if there was a problem calling the counterparty API, it'll get caught here
     }).catch(function () {
-      
+
       // set the error state
       self.setState({ err: true });
     });
@@ -74,19 +74,30 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid d-flex flex-column bg-dark text-white text-center">
-
         <main className="flex-fill">
-          { title() }
-          { assetForm() }
-          { error(this.state) }
-          { assetData(this.state) }
-      <p class="FeaturedAssets"><b>Featured Assets</b></p><p class="FeaturedAssetsList"><a href="/A11143797262801580196">EMPEROR OF BITCOIN</a><br/><a href="/A11193054832787328626">Return to null</a><br/><a href="/A11138464185160390958">Hodl-lk-mo-fdl-gw-fp-v1</a><br/><a href="/A11130160322110527014">1st Rare Pepe In Space</a><br/><a href="/A11129336362830770835">GOLDEN HEART</a><br/><a href="/A11160656854035320052">Rioting Jeb</a><br/><a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br/><a href="/A11151095948077247591">YANGSTOMP</a><br/><a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br/><a href="/A11119422956623151903">DJPEPE Interview</a><br/><a href="/A11117815878726952419">NOXCP</a><br/></p>
+          {title()}
+          {assetForm()}
+          {error(this.state)}
+          {assetData(this.state)}
+          <p className="FeaturedAssets">
+            <b>Featured Assets</b>
+          </p>
+          <p className="FeaturedAssetsList">
+            <a href="/A11143797262801580196">EMPEROR OF BITCOIN</a><br />
+            <a href="/A11193054832787328626">Return to null</a><br />
+            <a href="/A11138464185160390958">Hodl-lk-mo-fdl-gw-fp-v1</a><br />
+            <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br />
+            <a href="/A11129336362830770835">GOLDEN HEART</a><br />
+            <a href="/A11160656854035320052">Rioting Jeb</a><br />
+            <a href="/A11181471940129535550">RARE CSW INTERVIEW</a><br />
+            <a href="/A11151095948077247591">YANGSTOMP</a><br />
+            <a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br />
+            <a href="/A11119422956623151903">DJPEPE Interview</a><br />
+            <a href="/A11117815878726952419">NOXCP</a><br />
+          </p>
         </main>
-
-
-
         <footer>
-          { footer() }
+          {footer()}
         </footer>
       </div>
     );
@@ -97,7 +108,9 @@ function title() {
   return (
     <div className="row pb-5 pt-4">
       <div className="col">
-        <h1 className="display-2"><a className="text-light" href="/">Viewport.me</a></h1>
+        <h1 className="display-2">
+          <a className="text-light" href="/">Viewport.me</a>
+        </h1>
       </div>
     </div>
   );
@@ -142,7 +155,7 @@ function error(state) {
   return (
     <div className="row">
       <div className="col p-3 mb-2 bg-warning text-dark">
-        Freeport Asset ID <span className="font-weight-bold">{state.assetId}</span> invalid or malformed  
+        Freeport Asset ID <span className="font-weight-bold">{state.assetId}</span> invalid or malformed
       </div>
     </div>
   );
@@ -150,7 +163,7 @@ function error(state) {
 
 function assetData(state) {
   if (!state.imgUrl) return;
-  
+
   return (
     <div>
       <div className="row pb-3">
@@ -166,7 +179,7 @@ function assetData(state) {
       <div className="row pb-3">
         <div className="col">
           <span>Asset Details: </span>
-          <a className="text-light" href={state.xChainUrl}>{state.xChainUrl}</a><hr/>
+          <a className="text-light" href={state.xChainUrl}>{state.xChainUrl}</a><hr />
         </div>
       </div>
     </div>
@@ -179,7 +192,11 @@ function footer() {
       <div className="col small">
         <span>Create your own Cryptogoods with </span>
         <a className="text-light" href="https://freeport.io" target="_blank" rel="noopener noreferrer">Freeport.io</a>
-        <span>!<br/>Enjoy this site? Cryptogoods happily accepted here: 1GotRejB6XsGgMsM79TvcypeanDJRJbMtg<br/><br/>Special thanks to <a className="text-light" href="https://www.twitter.com/trainface" target="_blank" rel="noopener noreferrer">@trainface</a> for the dev assistance.<br/>Contact me on Twitter: <a className="text-light" href="https://www.twitter.com/mikeinspace" target="_blank" rel="noopener noreferrer">@mikeinspace</a></span>
+        <span>!<br />
+          Enjoy this site? Cryptogoods happily accepted here: 1GotRejB6XsGgMsM79TvcypeanDJRJbMtg<br /><br />
+          Special thanks to <a className="text-light" href="https://www.twitter.com/trainface" target="_blank" rel="noopener noreferrer">@trainface</a> for the dev assistance.<br />
+          Contact me on Twitter: <a className="text-light" href="https://www.twitter.com/mikeinspace" target="_blank" rel="noopener noreferrer">@mikeinspace</a>
+        </span>
       </div>
     </div>
   );
