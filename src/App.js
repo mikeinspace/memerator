@@ -83,14 +83,15 @@ class App extends React.Component {
             <b>Featured Assets</b>
           </p>
           <p className="FeaturedAssetsList">
+            <a href="/A11171870518195987589">SHARK!!! RUN!!!</a><br />
             <a href="/A11141481401769086880">THE VIRUS IS SPREADING</a><br />
+            <a href="/A11133126349559965953">Liquid Thermite! BOOM!!</a><br />
             <a href="/A11143797262801580196">EMPEROR OF BITCOIN</a><br />
             <a href="/A11193054832787328626">Return to null</a><br />
             <a href="/A11138464185160390958">Hodl-lk-mo-fdl-gw-fp-v1</a><br />
             <a href="/A11130160322110527014">1st Rare Pepe In Space</a><br />
             <a href="/A11129336362830770835">GOLDEN HEART</a><br />
             <a href="/A11160656854035320052">Rioting Jeb</a><br />
-            <a href="/A11151095948077247591">YANGSTOMP</a><br />
             <a href="/A11102213780575909853">iMac Miner Pepe fp v1.0</a><br />
             <a href="/A11117815878726952419">NOXCP</a><br />
           </p>
